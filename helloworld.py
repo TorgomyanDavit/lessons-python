@@ -7,6 +7,5 @@ def fib(n):
     print()  # This print() is inside the while loop
 fib(10)
 
-
 if (5 > 2):
     print("Five is greater than two!")
