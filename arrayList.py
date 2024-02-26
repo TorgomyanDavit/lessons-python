@@ -67,4 +67,4 @@ my_list = [1, 2, 3]
 # hex_memory_address = hex(memory_address)
 
 
-# print(hex_memory_address)
+# print(length)
