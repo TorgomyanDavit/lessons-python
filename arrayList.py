@@ -66,5 +66,4 @@ my_list = [1, 2, 3]
 # get memory hexademical name
 # hex_memory_address = hex(memory_address)
 
-
 # print(length)
