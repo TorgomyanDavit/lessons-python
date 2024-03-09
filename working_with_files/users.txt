@@ -1,0 +1,7 @@
+First Name, Last Name, Email Address, Gender
+John, Smith, johnsmith@example.com, Male
+Emma, Johnson, emmaj@example.com, Female
+Michael, Brown, michaelb@example.com, Male
+Sarah, Davis, sarahd@example.com, Female
+David, Wilson, davidw@example.com, Male
+Jennifer, Martinez, jenniferm@example.com, Female
