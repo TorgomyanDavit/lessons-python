@@ -32,40 +32,48 @@ with open("users.txt","r") as myFile:
 '''
 
 '''
-Append - will create a file if the specified file does not exist
-with open("output.txt","a") as myFile:
-    myFile.write("\nour new line")
+
+    Append - will create a file if the specified file does not exist
+    with open("output.txt","a") as myFile:
+        myFile.write("\nour new line")
+        
 
 '''
 '''
-# Write - will create a file if the specified file does not exist and dellete all write new all
-with open("output.txt","w") as myFile:
-    myFile.write("our new line")
+
+    # Write - will create a file if the specified file does not exist and dellete all write new all
+    with open("output.txt","w") as myFile:
+        myFile.write("tuyn ")
 
 '''
 
 '''
-try :
-    with open("outputs.txt","x") as myFile:
-        myFile.write("our new line")
-except Exception as error:
-    print("error",error)
+
+    try :
+        with open("outputs.txt","x") as myFile:
+            myFile.write("our new line")
+    except Exception as error:
+        print("error",error)
     
 '''
 
-def write_file(dest,text) :
-    with open(f"{dest}.txt","a") as myFile :
-        myFile.write(text)
+''' 
 
-with open("users.txt","r") as myFile :
-    for line in myFile.readlines() :
-        info = line[:-1].split(",")
-        if info[3].strip() == "Male":
-            write_file("Male",info[3]+"\n")   
-        elif info[3].strip() == "Female" :
-            write_file("Female",info[3]+"\n")   
-        else :
-            print("Unknown")
+    def write_file(dest,text) :
+        with open(f"{dest}.txt","a") as myFile :
+            myFile.write(text)
+
+    with open("users.txt","r") as myFile :
+        for line in myFile.readlines() :
+            info = line[:-1].split(",")
+            if info[3].strip() == "Male":
+                write_file("Male",info[3]+"\n")   
+            elif info[3].strip() == "Female" :
+                write_file("Female",info[3]+"\n")   
+            else :
+                print("Unknown")
+            
+'''
             
             
             
