@@ -1,0 +1,6 @@
+1 =>    pip3 install virtualenv
+2 =>    virtualenv venvName
+3 =>    source/Scropts/activate | activate env file
+4 =>    deactivate
+5 =>    pip3 list
+
