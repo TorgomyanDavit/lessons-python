@@ -1,6 +1,10 @@
+import os
+import time
+import threading
+current_dir = os.path.dirname(__file__)
 
-
-def genderFilter(file_name):
+print(current_dir)
+def genderFilter(file_name,start_line,end_line):
 
     # delete file
     with open("male.txt", "w") as maleFile:
@@ -10,14 +14,29 @@ def genderFilter(file_name):
     with open("female.txt", "w") as femaleFile:
         pass
 
-    with open(f"{file_name}.txt", "r") as myFile:
-        for line in myFile.readlines()[1:]:
+    with open(os.path.join(current_dir,file_name), "r") as myFile:
+        for line in myFile.readlines()[start_line:end_line]:
             info = line.strip().split(",")  
             if info[3] == "male" :  
                 with open("male.txt","a") as myFile:
-                    myFile.write(f"\n{info[2]}")
+                    myFile.write(line)
             else:
-                with open("female.txt","a") as myFile:
-                    myFile.write(f"\n{info[2]}")
+                with open(os.path.join(current_dir,"female.txt"),"a") as myFile:
+                    myFile.write(line)
+            time.sleep(0.1)
 
-genderFilter("users")
+start_time = time.time()
+
+# genderFilter("users.txt",1,50)
+# genderFilter("users.txt",50,100)
+thread1 = threading.Thread(target=genderFilter,args=("users.txt",1,50))
+thread2 = threading.Thread(target=genderFilter,args=("users.txt",50,100))
+
+thread1.start()
+thread2.start()
+thread1.join()
+thread2.join()
+
+
+print("Completeed Time",time.time() - start_time)
+
