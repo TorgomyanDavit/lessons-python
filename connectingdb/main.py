@@ -36,8 +36,8 @@ def create_record(connection, firstName, lastName, age, salary):
     try:
         cursor = connection.cursor()
         insert_query = """
-        INSERT INTO employees (firstName, lastName, age, salary)
-        VALUES (%s, %s, %s, %s)
+            INSERT INTO employees (firstName, lastName, age, salary)
+            VALUES (%s, %s, %s, %s)
         """
         values = (firstName, lastName, age, salary)
         cursor.execute(insert_query, values)

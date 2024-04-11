@@ -20,7 +20,6 @@ def generatePassword(theLength):
 
 
 def main():
-
     while True :
         print("Enter the password length")
         theLength = input()

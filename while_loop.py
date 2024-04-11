@@ -7,9 +7,9 @@
 #     "vardan":18,
 # }
 
-# keys = list(people.keys())
+# keys = people.values()
 
-
+# print(type(keys))
 '''
 count = -1
 while count < 10:
@@ -19,24 +19,24 @@ while count < 10:
     print(str(count) + "Hello world")  
 '''
 
-while True :
-    print("1. Settings")
-    print("2. Home")
-    print("3. Profile")
-    print("4. Exit")
-    print("Enter menu Id")
-    comand = input()
-    print("=============")
+# while True :
+#     print("1. Settings")
+#     print("2. Home")
+#     print("3. Profile")
+#     print("4. Exit")
+#     print("Enter menu Id")
+#     comand = input()
+#     print("=============")
 
-    if int(comand) == 1 :
-        print("home Page")
-    elif int(comand) == 2 :
-        print("settings Page")
-    elif int(comand) == 3 :
-        print("Profile Page")      
-    elif int(comand) == 4 :
-        print("Exit Page")
-        break
+#     if int(comand) == 1 :
+#         print("home Page")
+#     elif int(comand) == 2 :
+#         print("settings Page")
+#     elif int(comand) == 3 :
+#         print("Profile Page")      
+#     elif int(comand) == 4 :
+#         print("Exit Page")
+#         break
 
 
 
