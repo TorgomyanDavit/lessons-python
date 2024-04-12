@@ -14,12 +14,11 @@ db_name = os.getenv('db_name')
 # Connect to MySQL database
 def connect_to_db():
     try:
-        connection = mysql.connector.connect({
-                'host': db_host,
-                'user': db_user,
-                'password': db_pass,
-                'database': db_name
-            }
+        connection = mysql.connector.connect(
+            host=db_host,
+            user=db_user,
+            password=db_pass,
+            database=db_name
         )
         if connection.is_connected():
             print("Connected to MySQL database")
@@ -36,7 +35,7 @@ def create_record(connection, firstName, lastName, age, salary):
     try:
         cursor = connection.cursor()
         insert_query = """
-            INSERT INTO employees (firstName, lastName, age, salary)
+            INSERT INTO users (firstName, lastName, age, salary)
             VALUES (%s, %s, %s, %s)
         """
         values = (firstName, lastName, age, salary)
@@ -50,7 +49,7 @@ def create_record(connection, firstName, lastName, age, salary):
 def read_records(connection):
     try:
         cursor = connection.cursor()
-        select_query = "SELECT * FROM employees"
+        select_query = "SELECT * FROM flowers.users"
         cursor.execute(select_query)
         records = cursor.fetchall()
         if records:
@@ -87,30 +86,31 @@ def delete_record(connection, employee_id):
 
 # Main function to demonstrate CRUD operations
 def main():
-    # Connect to the database
-    connection = connect_to_db()
-    if connection:
-        # Create a new record
-        create_record(connection, 'John', 'Doe', 30, 50000.00)
-        
-        # Read all records
-        read_records(connection)
-        
-        # Update a record
-        update_record(connection, 1, 55000.00)  # Assuming the record with ID=1 exists
-        
-        # Read all records again after update
-        read_records(connection)
-        
-        # Delete a record
-        delete_record(connection, 1)  # Assuming the record with ID=1 exists
-        
-        # Read all records again after delete
-        read_records(connection)
-        
-        # Close the connection
-        connection.close()
-        print("MySQL connection closed")
+    # Connect to the database using context manager
+    with connect_to_db() as connection:
+        if connection:
+            try:
+                # Create a new record
+                create_record(connection, 'John', 'Doe', 30, 50000.00)
+                
+                # # # Read all records
+                # read_records(connection)
+                
+                # # Update a record
+                # update_record(connection, 1, 55000.00)  # Assuming the record with ID=1 exists
+                
+                # # Read all records again after update
+                # read_records(connection)
+                
+                # # Delete a record
+                # delete_record(connection, 1)  # Assuming the record with ID=1 exists
+                
+                # # Read all records again after delete
+                # read_records(connection)
+                
+            except Exception as e:
+                print(f"An error occurred: {e}")
 
-# if __name__ == "__main__":
-#     main()
+
+if __name__ == "__main__":
+    main()
