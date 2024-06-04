@@ -1,7 +1,7 @@
 '''
-print('hello world')
-print("hello world Davit")
-print("hello world Davit")
+    print('hello world')
+    print("hello world Davit")
+    print("hello world Davit")
 '''
 # print("hello world Davit")
 

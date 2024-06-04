@@ -58,7 +58,6 @@ with open("users.txt","r") as myFile:
 '''
 
 ''' 
-
     def write_file(dest,text) :
         with open(f"{dest}.txt","a") as myFile :
             myFile.write(text)
@@ -74,11 +73,3 @@ with open("users.txt","r") as myFile:
                 print("Unknown")
             
 '''
-            
-            
-            
-
-    
-
-
-
