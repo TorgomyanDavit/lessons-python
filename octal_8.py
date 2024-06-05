@@ -3,9 +3,9 @@
 
 # BASE 8 => Octal
 # as a octal    4   2   1    represent 3 bit 
-# as a binary   1   0   0    => equalt to plus all => 4  as a octal 
-# as a binary   1   0   1    => equalt to plus all => 5  as a octal 
-# as a binary   1   1   1    => equalt to plus all => 7  as a octal 
+# 4 octal as a binary   1   0   0  => equalt to plus all => 4  as a octal 
+# 2 octal as a binary   1   0   1    => equalt to plus all => 5  as a octal 
+# 1 octal as a binary   1   1   1    => equalt to plus all => 7  as a octal 
 # 100   101  111 = > 457
 # = V
 
