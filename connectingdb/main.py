@@ -10,6 +10,12 @@ db_user = os.getenv('db_user')
 db_pass = os.getenv('db_password')
 db_name = os.getenv('db_name')
 
+print(db_host)
+print(db_user)
+print(db_pass)
+print(db_name)
+
+
 
 # Connect to MySQL database
 def connect_to_db():
@@ -30,26 +36,11 @@ def connect_to_db():
         print(f"Error connecting to MySQL: {error}")
         return None
 
-# Create a new record in the database
-def create_record(connection, firstName, lastName, age, salary):
-    try:
-        cursor = connection.cursor()
-        insert_query = """
-            INSERT INTO users (firstName, lastName, age, salary)
-            VALUES (%s, %s, %s, %s)
-        """
-        values = (firstName, lastName, age, salary)
-        cursor.execute(insert_query, values)
-        connection.commit()
-        print("Record created successfully!")
-    except mysql.connector.Error as error:
-        print(f"Error creating record: {error}")
-
 # Read all records from the database
 def read_records(connection):
     try:
         cursor = connection.cursor()
-        select_query = "SELECT * FROM flowers.users"
+        select_query = "SELECT * FROM guests"
         cursor.execute(select_query)
         records = cursor.fetchall()
         if records:
@@ -59,6 +50,21 @@ def read_records(connection):
             print("No records found")
     except mysql.connector.Error as error:
         print(f"Error reading records: {error}")
+# Create a new record in the database
+def create_record(connection, firstName, lastName, age, salary):
+    try:
+        cursor = connection.cursor()
+        insert_query = """
+            INSERT INTO users (firstName, lastName, age, salary)
+            VALUES (%s, %s, %s, %s)
+        """
+        
+        values = (firstName, lastName, age, salary)
+        cursor.execute(insert_query, values)
+        connection.commit()
+        print("Record created successfully!")
+    except mysql.connector.Error as error:
+        print(f"Error creating record: {error}")
 
 # Update a record in the database
 def update_record(connection, employee_id, new_salary):
@@ -91,10 +97,10 @@ def main():
         if connection:
             try:
                 # Create a new record
-                create_record(connection, 'John', 'Doe', 30, 50000.00)
+                # create_record(connection, 'John', 'Doe', 30, 50000.00)
                 
                 # # # Read all records
-                # read_records(connection)
+                read_records(connection)
                 
                 # # Update a record
                 # update_record(connection, 1, 55000.00)  # Assuming the record with ID=1 exists
