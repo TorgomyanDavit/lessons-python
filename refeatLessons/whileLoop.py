@@ -15,13 +15,13 @@
 #     print(count)
 
 
-while True:
-    print(1)
-    comand = input()
+# while True:
+#     print(1)
+#     comand = input()
 
-    if(int(comand) == 8):
-        print("exit")
-        break
+#     if(int(comand) == 8):
+#         print("exit")
+#         break
     
 
 
