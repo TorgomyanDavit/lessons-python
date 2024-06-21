@@ -31,7 +31,4 @@ def main():
             print(f"number is less than {number}")
 
         triedNumber += 1
-
-
-            
 main()
