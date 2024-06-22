@@ -1,0 +1,3 @@
+John, Smith, johnsmith@example.com, Male
+Michael, Brown, michaelb@example.com, Male
+David, Wilson, davidw@example.com, Male
