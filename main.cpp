@@ -24,6 +24,7 @@ std::string generateText() {
     
     return std::string(name) + " " + std::string(surname);
 }
+
 int main() {
     // std::string letters = generateLetters();
     // std::cout << "Letters: " << "\n" << letters << std::endl;

@@ -3,4 +3,4 @@
 3 =>    source packageEnv/Scripts/activate | activate env file
 4 =>    deactivate
 5 =>    pip3 list
-
+5 =>    which python
