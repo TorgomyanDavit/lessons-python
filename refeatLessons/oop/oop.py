@@ -16,44 +16,20 @@
 
 
 
-class Profile:
-    def __init__(self,first_name,last_name,profile_picture,cover_picture):
-        self.first_name = first_name
-        self.last_name = last_name
+
+class Registration:
+    def register_user(self,email,password,first_name,last_name,):
+        if("@" in email and len(password) > 6) :
+            return Profile(first_name,last_name)
+ 
+class FbModel:
+    def __init__(self,profile_picture,cover_picture):
         self.profile_picture = profile_picture
         self.cover_picture = cover_picture
-    
-    def getFullName(self) :
-        return f"{self.first_name} {self.last_name}"
 
-
-class Page(Profile):
-    @staticmethod
-    def getUSer(name):
-        return name
-
-    def __init__(self,name,profile_picture,cover_picture):
-        self.name = name
-        self.profile_picture = profile_picture
-        self.cover_picture = cover_picture
-    
-    def getFullName(self) :
-        return f"{self.first_name} {self.last_name}"
-    
-    @property
-    def getFullNameProperty(self) :
-        return f"{self.name} {self.profile_picture}"
 
 user1 = Profile("Davit","Torgomyan","Davit.jpeg","Davit_cover.jpeg")
-flowersPage = Page("DALI-FLOWER","DALI.jpeg","FLOWER.jpeg")
-fullNaem = user1.getFullName()
-# print(fullNaem)
+user2 = Profile("Arman","Avetisyan","Arman.jpeg","Arman_cover.jpeg")
 
-# userName = Page.getUSer("Davo")
-# print(userName)
-
-userName = flowersPage.getFullNameProperty
-print(userName)
-
-
-# print("{} {}".format(user2.first_name,user2.last_name))
+print(f"{user1.first_name} {user1.last_name}")
+print("{} {}".format(user2.first_name,user2.last_name))
