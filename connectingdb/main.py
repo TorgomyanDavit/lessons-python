@@ -83,7 +83,7 @@ def delete_record(connection, employee_id):
     try:
         cursor = connection.cursor()
         delete_query = "DELETE FROM employees WHERE id = %s"
-        values = (employee_id,)
+        values = (employee_id)
         cursor.execute(delete_query, values)
         connection.commit()
         print("Record deleted successfully!")
