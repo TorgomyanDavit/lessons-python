@@ -1,3 +1,5 @@
+got to folder where want to create env
+
 1 =>    pip3 install virtualenv
 2 =>    virtualenv name
 3 =>    source packageEnv/Scripts/activate | activate env file
